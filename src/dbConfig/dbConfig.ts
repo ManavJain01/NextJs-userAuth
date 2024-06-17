@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 export async function connect(){
   try {
-      mongoose.connect(process.env.MONGO_URI!);
+      mongoose.connect('mongodb+srv://nit474011gwl:userauthNextJS@cluster0.gkezg6l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
       const connection = mongoose.connection;
 
       connection.on('connected', ()=>{
