@@ -6,7 +6,7 @@ import User from "@/models/userModel";
 connect()
 
 export async function POST(request: NextRequest){
-  try {
+  try { 
     const reqBody = await request.json()
     const {token} = reqBody
     console.log(token);
